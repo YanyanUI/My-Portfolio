@@ -1,0 +1,52 @@
+body{
+    background-color: #023859;
+}
+
+.navigation{
+    background-color: none;
+    height: auto;
+    width: auto;
+    text-align: end;
+    margin: 10px;
+}
+.navBtn{
+    background-color: #26658c;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#introImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 200px;
+    margin-top: 100px;
+    display: block;
+}
+.introFont{
+    color: white;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+.introFontp{
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+.textIntro{
+    width: 60%;
+    float: left;
+    margin-top: 150px;
+    margin-left: 110px;
+    width: auto;
+}
