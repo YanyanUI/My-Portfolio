@@ -9,6 +9,12 @@ body{
     text-align: end;
     margin: 10px;
 }
+#rjdtText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin-right: 400px;
+    color: white;
+}
 .navBtn{
     background-color: #26658c;
     border: 2px solid white;
@@ -21,6 +27,7 @@ body{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    display: inline-block;
 }
 #introImg{
     width: 300px;
@@ -42,11 +49,26 @@ body{
     font-size: 24px;
     font-family: Arial, sans-serif;
     margin: 10px;
+    margin-bottom: 50px;
 }
 .textIntro{
-    width: 60%;
     float: left;
     margin-top: 150px;
     margin-left: 110px;
     width: auto;
+    height: 300px;
+}
+
+#talkBtn{
+    border-radius: 30px;
+    background-color: #26658c;
+    color: black;
+    border: solid black 3px;
+    padding: 10px 20px;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
 }
