@@ -1,25 +1,30 @@
 body{
-    background-color: #023859;
+    background-color: #000;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: none;
     height: auto;
-    width: auto;
+    width: 100%;
     text-align: end;
     margin: 10px;
+    font-size: 14px;
 }
 #rjdtText{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: inline-block;
     margin-right: 400px;
-    color: white;
+    color: #e7e7e7;
 }
 .navBtn{
-    background-color: #26658c;
-    border: 2px solid white;
+    background-color: #171717;
+    border: 1px solid #838383;
     border-radius: 5px;
-    color: white;
+    color: #e7e7e7;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -29,46 +34,238 @@ body{
     cursor: pointer;
     display: inline-block;
 }
+.navUl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 14px;
+    gap: 3px;
+}
+.navBtn:hover{
+    background-color: #171717;
+    color: #e7e7e7;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 #introImg{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    float: right;
-    margin-right: 200px;
-    margin-top: 100px;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
 }
 .introFont{
-    color: white;
+    color: #e7e7e7;
     font-size: 40px;
     font-family: Arial, sans-serif;
     margin: 10px;
 }
 .introFontp{
-    color: white;
-    font-size: 24px;
+    color: #e7e7e7;
+    font-size: 16px;
     font-family: Arial, sans-serif;
-    margin: 10px;
-    margin-bottom: 50px;
+    margin-left: 10px;
 }
 .textIntro{
-    float: left;
-    margin-top: 150px;
-    margin-left: 110px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
     width: auto;
-    height: 300px;
+    margin-left: 30px;
+}
+#talkBtn{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #171717;
+    color: #e7e7e7;
+    border: solid #838383 1px;
+    padding: 10px 10px;
+    height: auto;
+    width: 40%;
+    margin-top: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    font-size: 20px;
+}
+#talkBtn:hover{
+    background-color: #023859;
+    color: white;
+    border: solid #838383 1px;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+#firstScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+#secondPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium';
+    color: #e7e7e7;
+}
+.secondPageTitle{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e7e7e7;
+    border-radius: 8px;
+    border-bottom: #000 5px solid;
 }
 
-#talkBtn{
-    border-radius: 30px;
-    background-color: #26658c;
-    color: black;
-    border: solid black 3px;
-    padding: 10px 20px;
+.aboutme-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.aboutme-text-container p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    color: #e7e7e7;
+}
+.approach-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.approach-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    padding: 8px;
+    border-radius: 12px;
+    border: solid #838383 1px;
+    width: 30%;
     height: auto;
-    width: auto;
-    margin-top: 30px;
+    margin: 10px;
+}
+.approach-item h4, p{
+    color: #e7e7e7;
+    opacity: 1;
+}
+.approach-item:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.thirdPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#e7e7e7;
+    font-family: 'Franklin Gothic Medium';
+}
+.thirdPage-Label{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e7e7e7;
+}
+.service-offerings-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #e7e7e7;
+
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    padding: 8px;
+    border-radius: 12px;
+    width: 20%;
+    margin: 2%;
+    border: solid #838383 1px;
+}
+.service-container:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+.service-container h3{
+    text-align: center;
+    font-size: 22px;
+}
+#backBTN{
+    background-color: #171717;
+    border: 2px solid #838383;
+    border-radius: 5px;
+    color: #e7e7e7;
+    padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    align-self: center;
+}
+#backBTN:hover{
+    background-color: #023859;
+    color: #e7e7e7;
+    transform: scale(1.1);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+#footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #e7e7e7;
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 30px;
+    background-color: #171717;
+    padding: 8px;
+}
+.img-footer{
+    width: 8%;
+    height: 8%;
+}
+.social-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#copyright{
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+}
+.info-footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+}
+.outer-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+}
+section{
+    margin: 110px;
 }

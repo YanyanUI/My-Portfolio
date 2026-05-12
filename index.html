@@ -7,28 +7,116 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navigation">
-        <h1 id="rjdtText">RHEYAN'S PORTFOLIO </h1>
-        <button class="navBtn">Home</button>
-        <button class="navBtn">About Me</button>
-        <button class="navBtn">Contact</button>
-        <button class="navBtn">Projects</button>
-        <button class="navBtn">Services</button>
-    </nav>
-    <div class="intro">
-        <div class="textIntro">
-        <h1 class="introFont">Hi!, I'm Rheyan</h1>
-        <h1 class="introFont">I am a FrontEnd Developer</h1>
-        <p class="introFontp">Looking for an interactive yet eye catching web design? <br>Rheyan at your service.</p>
-        <a href="#" id="talkBtn">Let's Talk</a>
-    </div>
-        <img src="Images\1x1_pic_ni-removebg-preview.png" id="introImg">
-    </div>
-    <div class="secondScreen">
-        <div class="secondContainer">
-
-
+    <header>    
+        <nav class="navigation" id="navigation">
+            <h1 id="rjdtText">RHEYAN'S PORTFOLIO </h1>
+            <ul class="navUl">
+                <li><a href="Images/Professional Minimalist Resume Cv Design Template.jpg" class="navBtn" download="My_Resume">Download CV</a></li>
+                <li><a href="#secondPage" class="navBtn">About Me</a></li>
+                <li><a href="" class="navBtn">Contact</a></li>
+                <li><a href="" class="navBtn">Projects</a></li>
+                <li><a href="#thirdPage" class="navBtn">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="firstScreen">
+            <div class="intro">
+                <div class="textIntro">
+                    <span class="textContainer">
+                        <span class="introFont">Hi!, I am Rheyan, your website builder</span><br>
+                        <p class="introFontp">I am a FrontEnd Developer, that focused on SEO
+                        for your visibility.<br><br>
+                        Looking for an interactive and eye catching website?<br>Hi! Rheyan at your serivice.
+                        </p>
+                    </span>
+                    <a href="mailto:rheyyanjulestanawan@gmail.com" id="talkBtn">Let's Talk</a>
+                </div>
+                <img src="../Images/1x1_pic_ni-removebg-preview.png" id="introImg" alt="My Profile">
+            </div>
+        </section>
+        <section id="secondPage">
+                <h2 class="secondPageTitle">ABOUT ME</h2>
+                <div class="aboutme-text-container">
+                    <p>I am a passionate FrontEnd Developer with a focus on creating engaging and user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I am always looking to improve my skills and stay up-to-date with the latest technologies.</p>
+                    <h3>My Approach</h3>
+                    <div class="approach-container">
+                        <div class="approach-item">
+                            <h4>SEO Optimization</h4>
+                            <p>I prioritize SEO in my web development process to ensure that your website ranks well on search engines and attracts more visitors.</p>
+                        </div>
+                        <div class="approach-item">
+                            <h4>Responsive Design</h4>
+                            <p>I create websites that are responsive and look great on all devices, providing a seamless user experience.</p>
+                        </div>
+                        <div class="approach-item">
+                            <h4>Interactive Elements</h4>
+                            <p>I incorporate interactive elements into my designs to engage users and make their browsing experience more enjoyable.</p>
+                    </div>
+                </div>
+        </section>
+        <section class="thirdPage" id="thirdPage">
+            <h3 class="thirdPage-Label">Service Offerings</h3>
+            <div class="service-offerings-container">
+                    <div class="service-container">
+                        <h3>HTML</h3>
+                        <ul>
+                            <li>Semantic HTML</li>
+                            <li>HTML5</li>
+                            <li>SEO Focused</li>
+                        </ul>
+                    </div>
+                <div class="service-container">
+                    <h3>CSS</h3>
+                    <div>
+                        <ul>
+                            <li>Tailwind/Bootstrap</li>
+                            <li>Responsive Website</li>
+                            <li>Minimalistic Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-container">
+                    <h3>Javascript</h3>
+                    <div>
+                        <ul>
+                            <li>ES6</li>
+                            <li>React/Vanilla</li>
+                            <li>Node/Express</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#navigation" id="backBTN">Back to Top</a>
+        </section>    
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div class="social-footer">
+                <img src="../Images/1x1_pic_ni-removebg-preview.png" id="introImg" class="img-footer" alt="My Profile">
+                <div class="outer-info-container">
+                    <div class="info-footer-container">
+                        <div id="contact-info">
+                            <h3>Contact Information</h3>
+                            <p>Email: rheyanjules.tanawan@example.com</p>
+                            <p>Phone: +63 912 345 6789</p>
+                        </div>
+                        <div>
+                            <h3>Follow Me</h3>
+                                <ul id="social-media-links">
+                                    <li><a href="#">LinkedIn</a></li>
+                                    <li><a href="#">GitHub</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div id="copyright">
+                        <h3>Copyright</h3>
+                        <p>&copy; 2024 Rheyan Jules D. Tanawan. All rights reserved.</p>
+                </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
