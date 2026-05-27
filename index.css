@@ -82,26 +82,49 @@ html{
     width: auto;
     margin-left: 30px;
 }
-#talkBtn{
+.textIntro div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px;
+}
+.talkBtn{
     text-decoration: none;
     text-align: center;
     border-radius: 30px;
     background-color: #171717;
     color: #e7e7e7;
     border: solid #838383 1px;
-    padding: 10px 10px;
+    padding: 10px;
     height: auto;
-    width: 40%;
+    width: 20%;
     margin-top: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
     font-size: 20px;
 }
-#talkBtn:hover{
+.talkBtn:hover{
     background-color: #023859;
     color: white;
     border: solid #838383 1px;
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
+}
+#addStat{
+    display: flex;
+    flex-direction: row;
+}
+#addStat  h2, p{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#addStat p{
+    font-size: 16px;
+}
+#addStat div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #firstScreen{
     display: flex;
@@ -162,9 +185,107 @@ html{
     opacity: 1;
 }
 .approach-item:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
+#skills{
+    background-color: #171717;
+    border: solid 1px #171717;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    border-radius: 12px;
+}
+.skill-container{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.HTML5-skill{
+    border: solid 2px cyan;
+    background-color: #171717;
+    width: 80%;
+    border-radius: 5px;
+}
+.HTML5-skill-level{
+    background-color: white;
+    border: solid 3px white;
+    width: 95%;
+}
+.CSS-skill-level{
+    background-color: white;
+    border: solid 3px white;
+    width: 84%;
+}
+.ES6-skill-level{
+    background-color: white;
+    border: solid 3px white;
+    width: 78%;
+}
+.PHP-skill-level{
+    background-color: white;
+    border: solid 3px white;
+    width: 57%;
+}
+.Postgre-skill-level{
+    background-color: white;
+    border: solid 3px white;
+    width: 33%;
+}
+#skills:hover{
+    border: solid 1px #e7e7e7;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+/*Project ni*/
+#Projects{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#project-container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    gap: 10px;
+}
+#project-container div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    background-color: #171717;
+    border: solid 1px #171717;
+    border-radius: 12px;
+}
+#project-container div:hover{
+    border: solid 1px oklch(100% 0.00011 271.152);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+#project-container h2{
+    color: white;
+}
+#project-container a{
+    color: oklch(100% 0.00011 271.152);
+    text-decoration: none;
+    background-color: #171717;
+    padding: 8px;
+    border-radius: 12px;
+    border: solid 1px #171717;
+}
+#project-container a:hover{
+    border: solid 1px oklch(100% 0.00011 271.152);
+}
+
 .thirdPage{
     display: flex;
     flex-direction: column;
@@ -196,34 +317,73 @@ html{
     border: solid #838383 1px;
 }
 .service-container:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
 .service-container h3{
     text-align: center;
     font-size: 22px;
 }
-#backBTN{
+/*Contactg ni*/
+#contact{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-heading{
+    color: white;
+}
+#contact-contents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px #171717;
+    width: 50%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px;
+    border-radius: 12px;
     background-color: #171717;
-    border: 2px solid #838383;
-    border-radius: 5px;
-    color: #e7e7e7;
-    padding: 10px 20px;
-    text-align: center;
+    color: white;
+}
+#contact-contents:hover{
+    border: solid 1px white;
+}
+#contact-container{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 5px;
+    border-radius: 8px;
+}
+#contact-container div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#backbtn{
+    background-color: #171717;
+    border: solid 1px #171717;
+    padding: 8px;
+    border-radius: 8px;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    display: inline-block;
-    width: 100px;
-    align-self: center;
+    color: white;
+    margin-top: 20px;
 }
-#backBTN:hover{
-    background-color: #023859;
-    color: #e7e7e7;
-    transform: scale(1.1);
+#backbtn:hover{
+    border: solid 1px white;
 }
+
+
 footer{
     display: flex;
     flex-direction: column;
