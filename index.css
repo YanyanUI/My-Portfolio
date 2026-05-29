@@ -190,7 +190,7 @@ html{
 }
 #skills{
     background-color: #171717;
-    border: solid 1px #171717;
+    border: solid #838383 1px;
     padding: 12px;
     display: flex;
     flex-direction: row;
@@ -340,16 +340,11 @@ html{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    border: solid 1px #171717;
     width: 50%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 12px;
     border-radius: 12px;
-    background-color: #171717;
     color: white;
-}
-#contact-contents:hover{
-    border: solid 1px white;
 }
 #contact-container{
     width: 90%;
@@ -363,6 +358,11 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: #171717;
+    padding: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 12px;
 }
 
 #backbtn{
@@ -396,7 +396,6 @@ footer{
     font-family: 'Franklin Gothic Medium';
     margin-top: 30px;
     background-color: #171717;
-    padding: 8px;
 }
 .img-footer{
     width: 8%;
